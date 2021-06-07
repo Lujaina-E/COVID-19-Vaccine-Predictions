@@ -9,7 +9,7 @@ A collection of regression algorithm applications (linear and complex), includin
 I was inspired to build something relating to the COVID-19 vaccine rollout after I got my vaccine and listening from several sources that they had no access to vaccines where they are. This personally bothered me as I know vaccine arrival to Alberta is central, and so the problem is clearly within the dispersion system from AHS to local hospitals and pharmacies across zones, as well as the priority through which age groups are able to book vaccines fairly. 
 
 # How it works
-<a href="">Planning Page</a>
+<a href="https://github.com/Lujaina-E/Supervised-Learning-Predictions/blob/main/ML%20COVID%20Vaccine%20Rate%20Predictor.pdf">Planning Page</a>
 
 # Challenges
 - Importing proper data that fit the criteria of what I needed to achieve my main goal as planned
