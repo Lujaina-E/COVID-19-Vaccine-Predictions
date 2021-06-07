@@ -4,6 +4,10 @@ A collection of regression algorithm applications (linear and complex), includin
 
 
 <hr>
+
+
+
+
 ### Vaccine Priority Tracker
  # Inspiration 
 I was inspired to build something relating to the COVID-19 vaccine rollout after I got my vaccine and listening from several sources that they had no access to vaccines where they are. This personally bothered me as I know vaccine arrival to Alberta is central, and so the problem is clearly within the dispersion system from AHS to local hospitals and pharmacies across zones, as well as the priority through which age groups are able to book vaccines fairly. 
