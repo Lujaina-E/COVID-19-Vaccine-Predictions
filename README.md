@@ -24,3 +24,6 @@ I was inspired to build something relating to the COVID-19 vaccine rollout after
 
 ## What I learned
 Planning out the project beforehand, especially when regression is involved, is very helpful because I won't know what kind of data I'm be exposed to. I also learned the details of how to interpret the data that I'm using, and the slope of the line of best fit. This was especially apparent because I had to be able to isolate the x-values of the intersection point of different lines to be able to decide what demographic the program should suggest increased exposure to the vaccine for. 
+
+## Features for the Future
+- Pulling live data from the AHS website
