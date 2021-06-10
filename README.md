@@ -17,8 +17,9 @@ I was inspired to build something relating to the COVID-19 vaccine rollout after
 
 ## How it works
 <a href="https://github.com/Lujaina-E/Supervised-Learning-Predictions/blob/main/ML%20COVID%20Vaccine%20Rate%20Predictor.pdf">Planning Page</a>
+
+ CSV document "National Vaccine Coverage"
 <a href="https://health-infobase.canada.ca/covid-19/vaccination-coverage/">Data Retrieval</a>
-CSV document "National Vaccine Coverage"
 
 
 
