@@ -17,6 +17,10 @@ I was inspired to build something relating to the COVID-19 vaccine rollout after
 
 ## How it works
 <a href="https://github.com/Lujaina-E/Supervised-Learning-Predictions/blob/main/ML%20COVID%20Vaccine%20Rate%20Predictor.pdf">Planning Page</a>
+<a href="https://health-infobase.canada.ca/covid-19/vaccination-coverage/">Data Retrieval</a>
+CSV document "National Vaccine Coverage"
+
+
 
 ## Challenges
 - Importing proper data that fit the criteria of what I needed to achieve my main goal as planned
@@ -28,4 +32,4 @@ Planning out the project beforehand, especially when regression is involved, is 
 I also learned the details of how to interpret the data that I'm using, and the slope of the line of best fit. This was especially apparent because I had to be able to isolate the x-values of the intersection point of different lines to be able to decide what demographic the program should suggest increased exposure to the vaccine for. 
 
 ## Features for the Future
-- Pulling live data from the AHS website
+- Pulling live data from the "Health Infobase Canada" website and CSV document
