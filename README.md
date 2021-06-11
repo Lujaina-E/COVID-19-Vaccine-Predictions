@@ -17,7 +17,6 @@ I was inspired to build something relating to the COVID-19 vaccine rollout after
 - Importing proper data that fit the criteria of what I needed to achieve my main goal as orginally planned
 - Making sure the data was in a proper format before I input it (csv file, dates were written as numbers rather than date form)
 - Scaling the data properly to account for the oustanding vaccine percentage of the Northwest Territories and Nunavut as their trendline lines gave negative [impossible] values
-- 
 
 ## What I learned
 Planning out the project beforehand, especially when regression is involved, is very helpful because I won't know what kind of data I'm be exposed to. I also editted my docuemnt continuously to ensure I didn't stray off from my original goal when I had to fix my planning to account for challenges I wasn't expecting (eg. not finding precisely the type of data I was expecting to) Micromanaging the data and making it more suitable for the graphs that I am making was also a valuable skill I learned as many hours were spent on Excel filtering and sorting the data to ensure I would only get the values I needed and that the values used would give me the prediction results that I was expecting(percentages gave accurate results.) This required me to truly understand all the nitty-gritty details of my project, and the importance of always keeping the end goal in mind but being open to changes along the way. 
