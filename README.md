@@ -13,7 +13,7 @@ I was inspired to build something relating to the COVID-19 vaccine rollout after
 ## How it works
 <a href="https://github.com/Lujaina-E/Supervised-Learning-Predictions/blob/main/COVID%20Vaccine%20Rate%20Predictor%20Action%20Plan.pdf">Planning Page</a>
 
- <a href="https://health-infobase.canada.ca/covid-19/vaccination-coverage/">Data Retrieval</a>   CSV document "National Vaccine Coverage"
+ <a href="https://health-infobase.canada.ca/covid-19/vaccination-coverage/">Data Retrieval</a> - CSV document "National Vaccine Coverage"
 
 ## Challenges
 - Importing proper data that fit the criteria of what I needed to achieve my main goal as orginally planned
