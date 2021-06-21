@@ -13,8 +13,7 @@ x2 = dataset2["Days since December 19, 2020"].values.reshape(-1, 1)
 y2 = dataset2["%full"].values
 x3 = dataset3["Days since December 19, 2020"].values.reshape(-1, 1)
 y3 = dataset3["%full"].values
-
-# %%
+ # %%
 from sklearn.linear_model import LinearRegression
 #FITTING REGRESSION MODEL AND RETRIEVING GRAPH PROPERTIES
 model_LinearRegression1 = LinearRegression()
@@ -60,6 +59,8 @@ plt.scatter(x3, y3, color="blue", linewidth=4) # Northwest Territories
 plt.plot(x1, model_LinearRegression1.predict(x1), color="#F9C80E", linewidth=3, label = "NT") 
 plt.plot(x2, model_LinearRegression2.predict(x2), color="#253C78", linewidth=3, label = "NU") 
 plt.plot(x3, model_LinearRegression3.predict(x3), color="#D36582", linewidth=3, label = "YT") 
+
+#INTERSECTION PLOT
 plt.scatter(x12, y12, color="black")
 plt.scatter(x23, y23, color="black")
 plt.scatter(x13, y13, color="black")
@@ -73,8 +74,98 @@ plt.legend(fontsize=7)
 plt.tight_layout()
 plt.show()
 
-"""
-To do
-Finished: retrieved the intersection points
-Have to do intersectional analysis
-"""
+#INTERSECTION ANALYSIS
+print("Analysis Results:")
+
+print("WARNING.")
+if(x13 > 30):
+    if(x23 > 30):
+        print("- increase rate of vaccinations in Yukon")
+        print("- increase rate of vaccinations in the Northwest Territories")
+        print("- decrease rate of vaccinations in Nunavut")
+    elif(x23 < 30):
+        print("- increase rate of vaccinations in Yukon")
+        print("- increase rate of vaccinations in the Northwest Territories")
+    else:
+        print("- increase rate of vaccinations in Yukon")
+        print("- decrease rate of vaccinations in the Northwest Territories")
+elif(x13 < 30):
+    if(x23 > 30):
+        print("- increase rate of vaccinations in Yukon")
+        print("- decrease rate of vaccinations in the Northwest Territories")
+    elif(x23 < 30):
+        print("- increase rate of vaccinations in Nunavut")
+        print("- decrease rate of vaccinations in Yukon")
+        print("- decrease rate of vaccinations in the Northwest Territories")
+    else:
+        print("- increase rate of vaccinations in Nunavut")
+        print("- decrease rate of vaccinations in the Northwest Territories")
+else:
+    if(x23 > 30):
+        print("- decrease rate of vaccinations in Nunavut")
+    elif(x23 < 30):
+        print("- decrease rate of vaccinations in Nunavut")
+
+
+if(x12 > 30):
+    if(x23 > 30):
+        print("- increase rate of vaccinations in Yukon")
+        print("- decrease vaccination rates in the Northwest Territories")
+        print("- decrease vaccination rates in Nunavut")
+    elif(x23 < 30):
+        print("- decrease rate of vaccinations in the NorthWest Territories")
+        print("- increase rate of vaccinations in Nunavut")
+    else:
+        print("- increase rate of vaccinations in Yukon")
+        print("- decrease vaccination rates in the Northwest Territories")
+elif (x12 < 30):
+    if(x23 > 30):
+        print("- decrease rate of vaccinations in Nunavut")
+        print("- increase rate of vaccinations in the NorthWest Territories")
+    elif(x23 < 30):
+        print("- decrease rate of vaccinations in Yukon")
+        print("- increase rate of vaccinations in Nunavut")
+        print("- increase vaccination rates in the Northwest Territories")
+    else:
+        print("- increase vaccination rates in the Northwest Territories")
+        print("- decrease rate of vaccinations in Yukon")
+else:
+    if(x23 > 30):
+        print("- decrease rate of vaccinations in Yukon")
+    if(x23 < 30):
+        print("- decrease rate of vaccinations in Yukon")
+
+
+if(x23 > 30):
+    if(x12 < 30):
+        print("- increase rate of vaccinations in Yukon")
+        print("- decrease vaccination rates in the Northwest Territories")
+    elif(x12 > 30):
+        print("- decrease rate of vaccinations in Nunavut")
+        print("- increase rate of vaccinations in Yukon")
+        print("- increase vaccination rates in the Northwest Territories")
+    else:
+        print("- increase vaccination rates in Yukon")
+        print("- decrease vaccination rates in Nunavut")
+elif(x23 < 30):
+    if(x12 < 30):
+        print("- increase rate of vaccinations in Nunavut")
+        print("- decrease vaccination rates in Yukon")
+        print("- decrease vaccination rates in the Northwest Territories")
+    elif(x12 > 30):
+        print("- decrease rate of vaccinations in Yukon")
+        print("- increase vaccination rates in the Northwest Territories")
+    else:
+        print("- decrease vaccination rates in Yukon")
+        print("- increase vaccination rates in Nunavut")
+else:
+    if(x12 > 30):
+        print("- increase vaccination rates in the Northwest Territories")
+        print("- decrease vaccination rates in Nunavut")
+    if (x12 < 30):
+        print("- increase vaccination rates for Nunavut")
+        print("- decrease vaccination rates for the Northwest Territories")
+
+# to do: make sure suggestions only pop up once and aren't contradicting. 
+# Use a count variable every time something has been printed. If 
+# it has already been printed, do not print it again. 
