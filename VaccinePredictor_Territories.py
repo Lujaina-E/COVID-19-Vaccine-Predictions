@@ -75,96 +75,156 @@ plt.tight_layout()
 plt.show()
 
 #INTERSECTION ANALYSIS
-print("Analysis Results:")
 
+occurance_up_YK = 0
+occurance_down_YK = 0
+occurance_up_NT = 0
+occurance_down_NT = 0
+occurance_up_NU = 0
+occurance_down_NU = 0
+
+print("Analysis Results:")
 print("WARNING.")
+
 if(x13 > 30):
     if(x23 > 30):
         print("- increase rate of vaccinations in Yukon")
+        occurance_up_YK = occurance_up_YK + 1
         print("- increase rate of vaccinations in the Northwest Territories")
+        occurance_up_NT = occurance_up_NT + 1
         print("- decrease rate of vaccinations in Nunavut")
+        occurance_down_NU = occurance_down_NU + 1
     elif(x23 < 30):
         print("- increase rate of vaccinations in Yukon")
+        occurance_up_YK = occurance_up_YK + 1
         print("- increase rate of vaccinations in the Northwest Territories")
+        occurance_up_NT = occurance_up_NT + 1
     else:
         print("- increase rate of vaccinations in Yukon")
+        occurance_up_YK = occurance_up_YK + 1
         print("- decrease rate of vaccinations in the Northwest Territories")
+        occurance_down_NT = occurance_down_NT + 1
+
 elif(x13 < 30):
     if(x23 > 30):
         print("- increase rate of vaccinations in Yukon")
+        occurance_up_YK = occurance_up_YK + 1
         print("- decrease rate of vaccinations in the Northwest Territories")
+        occurance_down_NT = occurance_down_NT + 1
     elif(x23 < 30):
         print("- increase rate of vaccinations in Nunavut")
+        occurance_up_NU = occurance_up_NU + 1
         print("- decrease rate of vaccinations in Yukon")
+        occurance_down_YK = occurance_down_YK + 1
         print("- decrease rate of vaccinations in the Northwest Territories")
+        occurance_down_NT = occurance_down_NT + 1
+
     else:
         print("- increase rate of vaccinations in Nunavut")
+        occurance_up_NU = occurance_up_NU + 1
         print("- decrease rate of vaccinations in the Northwest Territories")
+        occurance_down_NT = occurance_down_NT + 1
 else:
-    if(x23 > 30):
-        print("- decrease rate of vaccinations in Nunavut")
-    elif(x23 < 30):
-        print("- decrease rate of vaccinations in Nunavut")
-
+    print("- decrease rate of vaccinations in Nunavut")
+    occurance_down_NU = occurance_down_NU + 1
 
 if(x12 > 30):
     if(x23 > 30):
         print("- increase rate of vaccinations in Yukon")
+        occurance_up_YK = occurance_up_YK + 1
         print("- decrease vaccination rates in the Northwest Territories")
+        occurance_down_NT = occurance_down_NT + 1
         print("- decrease vaccination rates in Nunavut")
+        occurance_down_NU = occurance_down_NU + 1
     elif(x23 < 30):
         print("- decrease rate of vaccinations in the NorthWest Territories")
+        occurance_down_NT = occurance_down_NT + 1
         print("- increase rate of vaccinations in Nunavut")
+        occurance_up_NU = occurance_up_NU + 1
+
     else:
         print("- increase rate of vaccinations in Yukon")
+        occurance_up_YK = occurance_up_YK + 1
         print("- decrease vaccination rates in the Northwest Territories")
+        occurance_down_NT = occurance_down_NT + 1
 elif (x12 < 30):
     if(x23 > 30):
         print("- decrease rate of vaccinations in Nunavut")
+        occurance_down_NU = occurance_down_NU + 1
         print("- increase rate of vaccinations in the NorthWest Territories")
+        occurance_up_NT = occurance_up_NT + 1
+
     elif(x23 < 30):
         print("- decrease rate of vaccinations in Yukon")
+        occurance_down_YK = occurance_down_YK + 1
         print("- increase rate of vaccinations in Nunavut")
+        occurance_up_NU = occurance_up_NU + 1
         print("- increase vaccination rates in the Northwest Territories")
+        occurance_up_NT = occurance_up_NT + 1
+
     else:
         print("- increase vaccination rates in the Northwest Territories")
+        occurance_up_NT = occurance_up_NT + 1
         print("- decrease rate of vaccinations in Yukon")
-else:
-    if(x23 > 30):
-        print("- decrease rate of vaccinations in Yukon")
-    if(x23 < 30):
-        print("- decrease rate of vaccinations in Yukon")
+        occurance_down_YK = occurance_down_YK + 1
 
+else:
+    print("- decrease rate of vaccinations in Yukon")
+    occurance_down_YK = occurance_down_YK + 1
 
 if(x23 > 30):
     if(x12 < 30):
         print("- increase rate of vaccinations in Yukon")
+        occurance_up_YK = occurance_up_YK + 1
         print("- decrease vaccination rates in the Northwest Territories")
+        occurance_down_NT = occurance_down_NT + 1
+
     elif(x12 > 30):
         print("- decrease rate of vaccinations in Nunavut")
+        occurance_down_NU = occurance_down_NU + 1
         print("- increase rate of vaccinations in Yukon")
+        occurance_up_YK = occurance_up_YK + 1
         print("- increase vaccination rates in the Northwest Territories")
+        occurance_up_NT = occurance_up_NT + 1
+
     else:
         print("- increase vaccination rates in Yukon")
+        occurance_up_YK = occurance_up_YK + 1
         print("- decrease vaccination rates in Nunavut")
+        occurance_down_NU = occurance_down_NU + 1
+
 elif(x23 < 30):
     if(x12 < 30):
         print("- increase rate of vaccinations in Nunavut")
+        occurance_up_NU = occurance_down_NU + 1
+
         print("- decrease vaccination rates in Yukon")
+        occurance_down_YK = occurance_down_YK + 1
         print("- decrease vaccination rates in the Northwest Territories")
+        occurance_down_NT = occurance_down_NT + 1    
     elif(x12 > 30):
         print("- decrease rate of vaccinations in Yukon")
+        occurance_down_YK = occurance_down_YK + 1
         print("- increase vaccination rates in the Northwest Territories")
+        occurance_up_NT = occurance_up_NT + 1    
+
     else:
         print("- decrease vaccination rates in Yukon")
+        occurance_down_YK = occurance_down_YK + 1
         print("- increase vaccination rates in Nunavut")
+        occurance_up_NU = occurance_up_NU + 1
 else:
     if(x12 > 30):
         print("- increase vaccination rates in the Northwest Territories")
+        occurance_up_NT = occurance_up_NT + 1    
         print("- decrease vaccination rates in Nunavut")
+        occurance_down_NU = occurance_down_NU + 1
+
     if (x12 < 30):
         print("- increase vaccination rates for Nunavut")
+        occurance_up_NU = occurance_up_NU + 1
         print("- decrease vaccination rates for the Northwest Territories")
+        occurance_down_NT = occurance_down_NT + 1    
 
 # to do: make sure suggestions only pop up once and aren't contradicting. 
 # Use a count variable every time something has been printed. If 
