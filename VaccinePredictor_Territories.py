@@ -226,6 +226,6 @@ else:
         print("- decrease vaccination rates for the Northwest Territories")
         occurance_down_NT = occurance_down_NT + 1    
 
-# to do: make sure suggestions only pop up once and aren't contradicting. 
-# Use a count variable every time something has been printed. If 
-# it has already been printed, do not print it again. 
+# to do: make sure suggestions only pop up once and aren't contradicting.  
+# If alert has already been printed, do not print it again. Figure out
+# a way to do this more efficiently for provinces. 
