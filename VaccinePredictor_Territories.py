@@ -41,9 +41,6 @@ y23 = (slope2 * x23) + intercept2
 x13 = (intercept3 - intercept1) / (slope1 - slope3)
 y13 = (slope1 * x13) + intercept1
 
-#do some research on where the intersections should be, and place it here. 
-# if statement will be for whether a warning sign is made to increase the 
-# vaccines to a certain province. Consider both options to increase rates for one province or decrease rates for another province. 
 #%%
 import matplotlib.pyplot as plt
 
