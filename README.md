@@ -30,4 +30,4 @@ How important it is to fully undertand the data, problem, and what my data means
 - Pulling live data from the "Health Infobase Canada" website and CSV document
 - Finding some way to write the time values as dates rather "days since ..."
 - More specific suggestions. For example: increase vaccinations by 30%
-- Make the intersectional analysis more multi-dimensional and allow it to account for all patterns
+- Make the intersectional analysis more multi-dimensional and allow it to account for all patterns rather than just intersections
