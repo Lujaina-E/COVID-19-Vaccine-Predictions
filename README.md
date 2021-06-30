@@ -27,7 +27,7 @@ How important it is to fully undertand the data, problem, and what my data means
 <hr>
 
 ## Features for the Future
-- Pulling live data from the "Health Infobase Canada" website and CSV document
+- Pulling live data from the "Health Infobase Canada" website and CSV document [orginal CSV file was edited]
 - Finding some way to write the time values as dates rather "days since ..."
 - More specific suggestions. For example: increase vaccinations by 30%
-- Find simpler way to do intersectional analysis for provinces
+- Find simpler way to do intersectional analysis for provincial rates
