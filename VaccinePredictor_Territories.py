@@ -1,6 +1,16 @@
 #%%
 import pandas as pd
 import numpy as np
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from matplotlib import style
+
+style.use('fivethirtyeight')
+
+
+def animate(i):
+    graph_data = open()
 #IMPORT DATA
 dataset1 = pd.read_csv("Vaccine_Data_NT.csv")
 dataset2 = pd.read_csv("Vaccine_Data_NU.csv")
@@ -14,7 +24,6 @@ y2 = dataset2["%full"].values
 x3 = dataset3["Days since December 19, 2020"].values.reshape(-1, 1)
 y3 = dataset3["%full"].values
  # %%
-from sklearn.linear_model import LinearRegression
 #FITTING REGRESSION MODEL AND RETRIEVING GRAPH PROPERTIES
 model_LinearRegression1 = LinearRegression()
 model_LinearRegression1.fit(x1, y1)
@@ -41,8 +50,10 @@ y23 = (slope2 * x23) + intercept2
 x13 = (intercept3 - intercept1) / (slope1 - slope3)
 y13 = (slope1 * x13) + intercept1
 
+#do some research on where the intersections should be, and place it here. 
+# if statement will be for whether a warning sign is made to increase the 
+# vaccines to a certain province. Consider both options to increase rates for one province or decrease rates for another province. 
 #%%
-import matplotlib.pyplot as plt
 
 """
 #DATA PLOT
